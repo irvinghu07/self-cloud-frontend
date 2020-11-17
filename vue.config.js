@@ -1,7 +1,7 @@
 module.exports = {
   devServer: {
     proxy: {
-      '/upload': {
+      '/upload/single': {
         target: 'http://localhost:7777',
         changeOrigin: true
       },
