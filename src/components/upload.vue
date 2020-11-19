@@ -13,9 +13,9 @@
 
 export default {
   name: "upload",
-  data: function () {
+  data() {
     return {
-      payload: 'placeholder'
+      payload : 'placeholder'
     }
   },
   methods: {
@@ -29,7 +29,7 @@ export default {
               'Content-Type': 'multipart/form-data',
             }
           }
-      ).then(resp => console.log(resp.data))
+      ).then(() => this.payload = "upload success")
     }
   }
 }
